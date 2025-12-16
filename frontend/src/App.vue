@@ -1,7 +1,8 @@
 <template>
   <div id="app" class="min-h-screen bg-gray-50">
     <nav class="fixed top-3 left-0 w-full flex justify-center z-50">
-      <div class="backdrop-blur-xl bg-white/60 border border-white/30 shadow-lg rounded-xl w-[calc(100%-24px)] max-w-6xl px-4">
+      <div
+        class="backdrop-blur-xl bg-white/60 border border-white/30 shadow-lg rounded-xl w-[calc(100%-24px)] max-w-6xl px-4">
         <div class="flex items-center h-14">
           <router-link to="/" class="text-xl font-bold text-primary no-underline">
             归属地查询
@@ -21,7 +22,6 @@
       </div>
     </nav>
     <div class="h-20"></div>
-
     <div class="container w-[calc(100%-24px)] max-w-6xl px-4 mx-auto">
       <router-view></router-view>
     </div>
@@ -29,15 +29,11 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
 import { useRoute } from 'vue-router'
-import appicon from '@/assets/images/appicon.png'
 
 const route = useRoute()
 
-const showNav = computed(() => !route.meta.hideNav)
-
-// Glass nav buttons
+// 导航栏CSS
 const navLinkClass = (path) => {
   const active = route.path === path
   return [
