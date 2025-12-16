@@ -3,6 +3,9 @@
     <nav class="fixed top-3 left-0 w-full flex justify-center z-50">
       <div class="backdrop-blur-xl bg-white/60 border border-white/30 shadow-lg rounded-xl w-[calc(100%-24px)] max-w-6xl px-4">
         <div class="flex items-center h-14">
+          <router-link to="/" class="text-xl font-bold text-primary no-underline">
+            归属地查询
+          </router-link>
           <div class="flex gap-3 ml-auto">
             <router-link to="/" :class="navLinkClass('/')">
               快速查询
@@ -28,6 +31,7 @@
 <script setup>
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
+import appicon from '@/assets/images/appicon.png'
 
 const route = useRoute()
 
