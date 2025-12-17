@@ -5,6 +5,8 @@
 
 **本项目已经经由 Zread 解析完成，如果需要快速了解项目，可以点击此处进行查看：[了解本项目](https://zread.ai/zxc7563598/go-mobile-locator)**
 
+如果你只是想要使用本工具，可以直接前往下载页面进行下载：[点击前往](https://github.com/zxc7563598/go-mobile-locator/releases)
+
 ---
 
 ## 项目背景
